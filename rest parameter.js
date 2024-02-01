@@ -8,3 +8,13 @@
   }
 
   participants('A','B','C','D','E')
+
+  const ignoreFirst = function(first,...rest){
+    for(const ag of rest){
+        console.log(ag);
+    }
+  }
+
+ignoreFirst('1세대', '2세대', '3세대');
+ignoreFirst('곰팡이', '강아지', '고양이');
+ignoreFirst(20, 9, 18, 19, 30, 34, 40);

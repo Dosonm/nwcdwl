@@ -36,3 +36,7 @@ function firstWords() {
   let topic = "";
   let word = topic + "단어";
   console.log(word)
+
+  const numbers = [1,2,3];
+  console.log(numbers);
+  console.log(...numbers)
