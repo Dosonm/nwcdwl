@@ -7,7 +7,7 @@ function printArguments(...args) {
   }
 }
 
-// 1. Spread 구문을 활용해서 sancks와 drinks 배열을 각각 mySnacks와 myDrinks 변수에 복사해 주세요
+// 1. Spread 구문을 활용해서 sancks와 drinks 배열을 각각 mySnacks와 myDrinks 변수에 "복사"해 주세요
 const mySnacks = [...snacks]
 const myDrinks = [...drinks]
 
@@ -15,7 +15,7 @@ mySnacks.splice(2, 3);
 myDrinks.splice(1);
 
 // 2. Spread 구문을 활용해서 mySnacks와 myDrinks 순서로 두 배열을 합쳐서 myChoice 변수에 할당해 주세요
-const myChoice = [...mySnacks, ...myDrinks];
+const myChoice = [...mySnacks, ...myDrinks];    //const myChoice = [mySnacks, myDrinks]; 이렇게하면 배열[2],배열[1] 이런식으로 두 개의 배열로 나타남
 console.log(myChoice)
 
 // 3. Spread 구문을 활용해서 myChoice의 각 요소들을 printArguments 함수의 아규먼트로 전달해 주세요
